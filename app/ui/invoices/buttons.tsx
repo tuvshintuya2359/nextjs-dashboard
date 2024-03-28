@@ -24,6 +24,7 @@ export function UpdateInvoice({ id }: { id: string }) {
     </Link>
   );
 }
+
 export function DeleteInvoice({ id }: { id: string }) {
   const deleteInvoiceWithId = deleteInvoice.bind(null, id);
  
@@ -36,3 +37,4 @@ export function DeleteInvoice({ id }: { id: string }) {
     </form>
   );
 }
+

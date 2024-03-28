@@ -30,6 +30,7 @@ export async function generateMetadata(
   }
 }
 
+
 export default async function Page({ params }: { params: { id: string } }) {
     const id = params.id;
     const [invoice, customers] = await Promise.all([
@@ -56,4 +57,5 @@ export default async function Page({ params }: { params: { id: string } }) {
       <Form invoice={invoice} customers={customers} />
     </main>
   );
+
 }
